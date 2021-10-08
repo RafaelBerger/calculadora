@@ -30,11 +30,16 @@ num9.addEventListener("click", numero9);
 num0.addEventListener("click", numero0);
 
 clear.addEventListener("click", limpar);
-opAdicao.addEventListener("click");
+opAdicao.addEventListener("click", somar());
 opSubtracao.addEventListener("click");
 opMultiplicacao.addEventListener("click");
 opDivisao.addEventListener("click");
 opIgual.addEventListener("click");
+
+function somar() {
+  const numero1 = visor.innerHTML;
+  console.log(numero1);
+}
 
 function limpar() {
   visor.innerHTML = "";
