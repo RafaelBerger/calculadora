@@ -16,7 +16,10 @@ var opDivisao = document.getElementById("op-divisao");
 var opIgual = document.getElementById("op-igual");
 
 var clear = document.getElementById("clear");
-var visor = document.getElementById("visor");
+var visor1 = document.getElementById("visor1");
+var visor2 = document.getElementById("visor2");
+var visorOp = document.getElementById("visor-op");
+var visorResultado = document.getElementById("visor-resultado-final");
 
 num1.addEventListener("click", numero1);
 num2.addEventListener("click", numero2);
@@ -30,57 +33,135 @@ num9.addEventListener("click", numero9);
 num0.addEventListener("click", numero0);
 
 clear.addEventListener("click", limpar);
-opAdicao.addEventListener("click", somar());
-opSubtracao.addEventListener("click");
-opMultiplicacao.addEventListener("click");
-opDivisao.addEventListener("click");
-opIgual.addEventListener("click");
+opAdicao.addEventListener("click", somar);
+opSubtracao.addEventListener("click", subtrair);
+opMultiplicacao.addEventListener("click", multiplicar);
+opDivisao.addEventListener("click", dividir);
+opIgual.addEventListener("click", igual);
+
+var numerosVisor1 = "";
+var numerosVisor2 = "";
+
+function igual() {
+  numerosVisor2 = visor2.innerHTML;
+  if (visorOp.innerHTML == "+") {
+    visorResultado.innerHTML = Number(numerosVisor1) + Number(numerosVisor2);
+  } else if (visorOp.innerHTML == "-") {
+    visorResultado.innerHTML = Number(numerosVisor1) - Number(numerosVisor2);
+  } else if (visorOp.innerHTML == "x") {
+    visorResultado.innerHTML = Number(numerosVisor1) * Number(numerosVisor2);
+  } else if (visorOp.innerHTML == "÷") {
+    visorResultado.innerHTML = Number(numerosVisor1) / Number(numerosVisor2);
+  }
+
+  visor1.innerHTML = "";
+  visor2.innerHTML = "";
+  visorOp.innerHTML = "";
+}
 
 function somar() {
-  const numero1 = visor.innerHTML;
-  console.log(numero1);
+  numerosVisor1 = visor1.innerHTML;
+  visorOp.innerHTML = "+";
+}
+
+function subtrair() {
+  numerosVisor1 = visor1.innerHTML;
+  visorOp.innerHTML = "-";
+}
+
+function multiplicar() {
+  numerosVisor1 = visor1.innerHTML;
+  visorOp.innerHTML = "x";
+}
+
+function dividir() {
+  numerosVisor1 = visor1.innerHTML;
+  visorOp.innerHTML = "÷";
 }
 
 function limpar() {
-  visor.innerHTML = "";
+  visor1.innerHTML = "";
+  visorOp.innerHTML = "";
+  visor2.innerHTML = "";
+  visorResultado.innerHTML = "";
 }
 
 function numero1() {
-  visor.innerHTML = visor.innerHTML + 1;
+  if (visorOp.innerHTML == "") {
+    visor1.innerHTML = visor1.innerHTML + 1;
+  } else if (visorOp.innerHTML != "") {
+    visor2.innerHTML = visor2.innerHTML + 1;
+  }
 }
 
 function numero2() {
-  visor.innerHTML = visor.innerHTML + 2;
+  if (visorOp.innerHTML == "") {
+    visor1.innerHTML = visor1.innerHTML + 2;
+  } else if (visorOp.innerHTML != "") {
+    visor2.innerHTML = visor2.innerHTML + 2;
+  }
 }
 
 function numero3() {
-  visor.innerHTML = visor.innerHTML + 3;
+  if (visorOp.innerHTML == "") {
+    visor1.innerHTML = visor1.innerHTML + 3;
+  } else if (visorOp.innerHTML != "") {
+    visor2.innerHTML = visor2.innerHTML + 3;
+  }
 }
 
 function numero4() {
-  visor.innerHTML = visor.innerHTML + 4;
+  if (visorOp.innerHTML == "") {
+    visor1.innerHTML = visor1.innerHTML + 4;
+  } else if (visorOp.innerHTML != "") {
+    visor2.innerHTML = visor2.innerHTML + 4;
+  }
 }
 
 function numero5() {
-  visor.innerHTML = visor.innerHTML + 5;
+  if (visorOp.innerHTML == "") {
+    visor1.innerHTML = visor1.innerHTML + 5;
+  } else if (visorOp.innerHTML != "") {
+    visor2.innerHTML = visor2.innerHTML + 5;
+  }
 }
 
 function numero6() {
-  visor.innerHTML = visor.innerHTML + 6;
+  if (visorOp.innerHTML == "") {
+    visor1.innerHTML = visor1.innerHTML + 6;
+  } else if (visorOp.innerHTML != "") {
+    visor2.innerHTML = visor2.innerHTML + 6;
+  }
 }
 
 function numero7() {
-  visor.innerHTML = visor.innerHTML + 7;
+  if (visorOp.innerHTML == "") {
+    visor1.innerHTML = visor1.innerHTML + 7;
+  } else if (visorOp.innerHTML != "") {
+    visor2.innerHTML = visor2.innerHTML + 7;
+  }
 }
 
 function numero8() {
-  visor.innerHTML = visor.innerHTML + 8;
+  if (visorOp.innerHTML == "") {
+    visor1.innerHTML = visor1.innerHTML + 8;
+  } else if (visorOp.innerHTML != "") {
+    visor2.innerHTML = visor2.innerHTML + 8;
+  }
 }
 
 function numero9() {
-  visor.innerHTML = visor.innerHTML + 9;
+  if (visorOp.innerHTML == "") {
+    visor1.innerHTML = visor1.innerHTML + 9;
+  } else if (visorOp.innerHTML != "") {
+    visor2.innerHTML = visor2.innerHTML + 9;
+  }
 }
 
 function numero0() {
-  visor.innerHTML = visor.innerHTML + 0;
+  if (visorOp.innerHTML == "") {
+    visor1.innerHTML = visor1.innerHTML + 0;
+  } else if (visorOp.innerHTML != "") {
+    visor2.innerHTML = visor2.innerHTML + 0;
+  }
 }
