@@ -101,7 +101,6 @@ const opIgual = document
   .getElementById("op-igual")
   .addEventListener("click", () => {
     dadosConta.push(Number(visor2.innerHTML));
-    console.log(dadosConta);
 
     if (visorOp.innerHTML == "+") {
       visorResultado.innerHTML = dadosConta.reduce((a, b) => a + b);
