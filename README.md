@@ -5,6 +5,11 @@ Meu primeiro projeto prático de programação com foco no estudo de JavaScript 
 Calculadora simples criada utilizando funções, eventos DOM com botôes e operadores matemáticos básicos.
 
 
+<div align="left">
+<img src="https://user-images.githubusercontent.com/84355579/153684688-daf53f02-6e95-4c3d-8abe-596644fc4324.jpg" width="450px" />
+</div>
+
+
 ## Funcionalidades
 
 - Operadores matemáticos básicos 
@@ -34,6 +39,10 @@ Calculadora simples criada utilizando funções, eventos DOM com botôes e opera
 My first practical programming project focusing on the study of basic JavaScript.
 
 Simple calculator created using functions, DOM events with buttons and basic math operators.
+
+<div align="left">
+<img src="https://user-images.githubusercontent.com/84355579/153684688-daf53f02-6e95-4c3d-8abe-596644fc4324.jpg" width="450px" />
+</div>
 
 
 ## Functionalities
