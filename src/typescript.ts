@@ -1,4 +1,9 @@
-const num1 = document.getElementById("num1").addEventListener("click", () => {
+const visor1 = document.getElementById("visor1");
+const visor2 = document.getElementById("visor2");
+const visorOp = document.getElementById("visor-op");
+const visorResultado = document.getElementById("visor-resultado-final");
+
+const num1: any = document.getElementById("num1").addEventListener("click", () => {
   if (visorOp.innerHTML == "") {
     visor1.innerHTML = visor1.innerHTML + 1;
   } else if (visorOp.innerHTML != "") {
@@ -121,7 +126,4 @@ const clear = document.getElementById("clear").addEventListener("click", () => {
   dadosConta = [];
 });
 
-const visor1 = document.getElementById("visor1");
-const visor2 = document.getElementById("visor2");
-const visorOp = document.getElementById("visor-op");
-const visorResultado = document.getElementById("visor-resultado-final");
+
