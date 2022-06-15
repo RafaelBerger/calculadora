@@ -1,9 +1,20 @@
 {
-  "dependencies": {
-    "@types/jest": "^28.1.1",
-    "@types/node": "^17.0.42",
-    "@types/react": "^18.0.12",
-    "@types/react-dom": "^18.0.5",
-    "typescript": "^4.7.3"
-  }
+  "name": "calculadora",
+  "version": "1.0.0",
+  "description": "Meu primeiro projeto prático de programação com foco no estudo de JavaScript básico.",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RafaelBerger/calculadora.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RafaelBerger/calculadora/issues"
+  },
+  "homepage": "https://github.com/RafaelBerger/calculadora#readme"
 }
