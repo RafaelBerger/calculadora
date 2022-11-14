@@ -47,6 +47,9 @@ function calculate(operation) {
     case "÷":
       result = numbersToBeCalculated.reduce((a, b) => a / b);
       break;
+    case "%":
+      result = numbersToBeCalculated.reduce((a, b) => (a * b) / 100);
+      break;
   }
 }
 
@@ -70,6 +73,10 @@ operators.forEach((elements) => {
         break;
       case "÷":
         operationToBeUsed = "÷";
+        clearScreen();
+        break;
+      case "%":
+        operationToBeUsed = "%";
         clearScreen();
         break;
       case "=":
