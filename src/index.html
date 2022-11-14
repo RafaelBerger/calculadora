@@ -1,52 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-bt">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculadora</title>
+    <title>Calculadora TypeScript</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main id="corpo">
-      <section id="corpo-visor">
-        <div class="visor-clear">
-          <!--Arrumar o nome-->
-          <div id="visor">
-            <div id="visor1"></div>
-            <div id="visor-op"></div>
-            <div id="visor2"></div>
-            <div id="visor-resultado-final"></div>
-          </div>
+    <main class="calc_body">
+      <div class="screen">
+        <div class="screen_content"></div>
+      </div>
+      <div class="calc_keys">
+        <div class="keys_container">
+          <div class="keys number_1 numbers">1</div>
+          <div class="keys number_2 numbers">2</div>
+          <div class="keys number_3 numbers">3</div>
+          <div class="keys number_4 numbers">4</div>
+          <div class="keys number_5 numbers">5</div>
+          <div class="keys number_6 numbers">6</div>
+          <div class="keys number_7 numbers">7</div>
+          <div class="keys number_8 numbers">8</div>
+          <div class="keys number_9 numbers">9</div>
+          <div class="keys number_0 numbers">0</div>
+          <div class="keys dot numbers">.</div>
+          <div class="keys clear">C</div>
+          <div class="keys delete">Delete</div>
+          <div class="keys porcentage">%</div>
+          <div class="keys orange_key operators sum">+</div>
+          <div class="keys orange_key operators sub">-</div>
+          <div class="keys orange_key operators mult">x</div>
+          <div class="keys orange_key operators div">÷</div>
+          <div class="keys orange_key operators equal">=</div>
         </div>
-      </section>
-      <section id="corpo-geral">
-        <!-- Numeros -->
-        <div id="container-numero">
-          <div id="corpo-numeros">
-            <div class="teclas numeros" id="1">1</div>
-            <div class="teclas numeros" id="2">2</div>
-            <div class="teclas numeros" id="3">3</div>
-            <div class="teclas numeros" id="4">4</div>
-            <div class="teclas numeros" id="5">5</div>
-            <div class="teclas numeros" id="6">6</div>
-            <div class="teclas numeros" id="7">7</div>
-            <div class="teclas numeros" id="8">8</div>
-            <div class="teclas numeros" id="9">9</div>
-            <div class="teclas numeros" id="0">0</div>
-          </div>
-        </div>
-        <!-- Operadores -->
-        <div id="corpo-operadores">
-          <div class="teclas operacoes" id="+">+</div>
-          <div class="teclas operacoes" id="-">-</div>
-          <div class="teclas operacoes" id="x">x</div>
-          <div class="teclas operacoes" id="÷">÷</div>
-          <div class="teclas" id="op-igual">=</div>
-          <div class="teclas" id="clear">C</div>
-        </div>
-      </section>
+      </div>
     </main>
-    <script src="../dest/typescript.js"></script>
   </body>
+  <script src="script.js"></script>
 </html>
