@@ -171,3 +171,16 @@ body {
   grid-column: 4;
   grid-row: 4;
 }
+
+@media (max-width: 450px) {
+  .calc_body {
+    width: 300px;
+    height: 500px;
+  }
+
+  .keys {
+    width: 3rem;
+    height: 3rem;
+    font-size: 0.9rem;
+  }
+}
