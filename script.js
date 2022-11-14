@@ -1,9 +1,11 @@
 const numbers = document.querySelectorAll(".numbers");
 const operators = document.querySelectorAll(".operators");
 const screen = document.querySelector(".screen_content");
+const screenSecondary = document.querySelector(".screen_secondary_content");
 
 function clearScreen() {
   screen.innerText = "";
+  screenSecondary.innerText = "";
 }
 
 const clearButton = document
@@ -84,8 +86,17 @@ operators.forEach((elements) => {
         if (result != undefined) {
           screen.innerText = result;
         }
+        operationToBeUsed = "=";
+        if (operationToBeUsed == "=" && numbersToBeCalculated[1] != undefined) {
+          screenSecondary.innerText +=
+            numbersToBeCalculated[1] + operationToBeUsed;
+        }
         clearScreenVariables();
         break;
+    }
+
+    if (numbersToBeCalculated.length == 1) {
+      screenSecondary.innerText += numbersToBeCalculated + operationToBeUsed;
     }
   });
 });
